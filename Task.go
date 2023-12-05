@@ -15,7 +15,7 @@ type TaskOwner struct {
 }
 
 // Adds task
-func (tm *TaskOwner) AddTaskName(name string) {
+func (tm *TaskOwner) AddTask(name string) {
 	taskID := len(tm.tasks) + 1
 	newTask := Task{ID: taskID, Name: name, Completed: false}
 	tm.tasks = append(tm.tasks, newTask)
